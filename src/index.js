@@ -5,4 +5,20 @@ function TodoItem() {
   return <span>Drink Coffee</span>;
 }
 
-ReactDOM.render(<TodoItem />, document.querySelector("#root"));
+function TodoList() {
+  return (
+    <ul>
+      <li>
+        <TodoItem />
+      </li>
+      <li>
+        <TodoItem />
+      </li>
+      <li>
+        <TodoItem />
+      </li>
+    </ul>
+  );
+}
+
+ReactDOM.render(<TodoList />, document.querySelector("#root"));
